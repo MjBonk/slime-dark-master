@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: clash;
+  src: url("./assets/ClashDisplay-Variable.ttf");
+}
+
+.font-clash {
+  font-family: clash;
+}
+
+* {
+  font-family: "Archivo", sans-serif, Arial, Helvetica, sans-serif;
+}
+
+/* CD icon spinning */
+@keyframes spin-slow {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 10s linear infinite;
+}
