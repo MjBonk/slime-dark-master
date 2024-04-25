@@ -11,6 +11,7 @@ export default {
 			animation: {
 				fadeIn: "fadeIn .3s ease-in forwards",
 				fadeInOpacity: "fadeInOpacity .2s ease-in forwards",
+				fadeInVideoPlaceholder: "fadeIn .8s ease-in forwards",
 				onloadAnimation: " .7s textShrink 1.2s ease-in-out forwards",
 			},
 			keyframes: {
@@ -20,7 +21,7 @@ export default {
 				},
 				textShrink: {
 					from: {},
-					to: {fontSize: "50px", top: "-14px", left:"0" },
+					to: { fontSize: "50px", top: "-14px", left: "0" },
 				},
 			},
 		},

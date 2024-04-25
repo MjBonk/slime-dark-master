@@ -45,7 +45,7 @@ export default function VideoThumbnail({ project, index, showComposer }) {
 					<div className="opacity-0 group-hover:opacity-100 z-10 bg-black/40 w-full h-full absolute flex justify-center items-center text-accent text-6xl">
 						<IoPlaySharp />
 					</div>
-					<img src={thumbnailUrl} alt="Video Preview" className="group-hover:scale-[1.1] group-hover:blur-md " />
+					<img src={thumbnailUrl}  className="group-hover:scale-[1.1] group-hover:blur-md aspect-video animate-fadeInVideoPlaceholder bg-accent" />
 				</div>
 				<div className="text-accent md:text-white pl-1 md:group-hover:opacity-100 md:opacity-0 md:absolute md:bottom-0 md:left-1 z-20  flex flex-col md:flex-col-reverse transition-opacity duration-150 ">
 					{composer && showComposer ? <p className="font-extrabold text-2xl uppercase -mb-2 md:mb-0 md:-mt-2"> {composer.name} </p> : null}
